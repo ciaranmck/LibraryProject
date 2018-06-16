@@ -55,7 +55,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\Book.cs.csproj">
+    <ProjectReference Include="..\Book\Book.cs.csproj">
       <Project>{966b2128-44d3-44b1-ab4a-635f16310098}</Project>
       <Name>Book.cs</Name>
     </ProjectReference>

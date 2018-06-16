@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryProjectTest", "Libra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookTest", "BookTest\BookTest.csproj", "{852FAF36-2DC4-4AB9-A85F-3A2DF4CF80F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Book.cs", "ClassLibrary1\Book.cs.csproj", "{966B2128-44D3-44B1-AB4A-635F16310098}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Book.cs", "Book\Book.cs.csproj", "{966B2128-44D3-44B1-AB4A-635F16310098}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

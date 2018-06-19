@@ -19,8 +19,8 @@ namespace LibraryProjectTest
         [TestInitialize]
         public void Initialize()
         {
-            book = new Book("The Joy of Sex", "Alex Comfort");
-            book2 = new Book("They Joy of Sex", "Alex Comforter");
+            book = new Book("The Joy of Sex", "Alex Comfort", "Porn");
+            book2 = new Book("They Joy of Sex", "Alex Comforter", "Porn");
             bookArray = new ArrayList();
             bookArray.Add(book);
             library = new Library(bookArray, "Ciaran and Marky's Wonder Library", 10);
@@ -60,7 +60,7 @@ namespace LibraryProjectTest
             Assert.AreEqual(false, library.IsAtCapacity());
             foreach(int num in Enumerable.Range(1, 9))
             {
-                library.AddBook(new Book("The Joy of Sex", "Alex Comfort")); 
+                library.AddBook(new Book("The Joy of Sex", "Alex Comfort", "Porn")); 
             }
             Assert.AreEqual(true, library.IsAtCapacity());
         }
@@ -70,7 +70,7 @@ namespace LibraryProjectTest
         {
             foreach (int num in Enumerable.Range(1, 9))
             {
-                library.AddBook(new Book("The Joy of Sex", "Alex Comfort"));
+                library.AddBook(new Book("The Joy of Sex", "Alex Comfort", "Porn"));
             }
             Assert.AreEqual(true, library.IsAtCapacity());
             library.AddBook(book2);

@@ -26,7 +26,7 @@ namespace LibraryProject
         [TestMethod]
         public void TestBorrowerHasBook()
         {
-            Book book = new Book("The Joy of Sex", "Alex Comfort");
+            Book book = new Book("The Joy of Sex", "Alex Comfort", "Porn");
             borrower.BorrowBook(book);
             Assert.AreEqual(1, borrower.CountBooks());
         }            

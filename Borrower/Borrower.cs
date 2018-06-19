@@ -27,5 +27,10 @@ namespace LibraryProject
         {
            return _backpack.Count;
         }
+
+        public void BorrowBook(Book book)
+        {
+            _backpack.Add(book);
+        }
     }
 }

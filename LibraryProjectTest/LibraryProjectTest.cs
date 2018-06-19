@@ -13,6 +13,8 @@ namespace LibraryProjectTest
         Book book;
         Book book2;
         ArrayList bookArray;
+        Borrower borrower;
+        ArrayList backpack;
 
         [TestInitialize]
         public void Initialize()
@@ -22,6 +24,8 @@ namespace LibraryProjectTest
             bookArray = new ArrayList();
             bookArray.Add(book);
             library = new Library(bookArray, "Ciaran and Marky's Wonder Library", 10);
+            backpack = new ArrayList();
+            borrower = new Borrower("Ciaran", backpack);
         }
 
         [TestMethod]
@@ -74,5 +78,13 @@ namespace LibraryProjectTest
             Assert.AreEqual("Go fuck yourself! We got enough books!", library.AddBook(book2));
         }
 
+        [TestMethod]
+        public void TestLibraryRemovesBook()
+        {
+            borrower.BorrowBook(library.RemoveBook(book));
+
+            Assert.AreEqual(1, borrower.CountBooks());
+            Assert.AreEqual(0, library.CountCollection());
+        }
     }
 }

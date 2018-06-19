@@ -59,6 +59,10 @@
       <Project>{966b2128-44d3-44b1-ab4a-635f16310098}</Project>
       <Name>Book.cs</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Borrower\Borrower.csproj">
+      <Project>{8e9396cb-9f5c-4121-a8a0-f720aff592de}</Project>
+      <Name>Borrower</Name>
+    </ProjectReference>
     <ProjectReference Include="..\LibraryProject\LibraryProject.csproj">
       <Project>{ff78c904-a615-446a-8289-4c34c8cb826a}</Project>
       <Name>LibraryProject</Name>

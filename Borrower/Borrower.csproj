@@ -43,5 +43,11 @@
     <Compile Include="Borrower.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Book\Book.cs.csproj">
+      <Project>{966b2128-44d3-44b1-ab4a-635f16310098}</Project>
+      <Name>Book.cs</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

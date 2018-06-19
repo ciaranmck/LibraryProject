@@ -11,24 +11,24 @@ namespace LibraryProject
         Borrower borrower;
 
         [TestInitialize]
-        public void initialize()
+        public void Initialize()
         {
             backpack = new ArrayList();
             borrower = new Borrower("Ciaran", backpack);
         }
 
         [TestMethod]
-        public void BorrowerHasName()
+        public void TestBorrowerHasName()
         {
             Assert.AreEqual("Ciaran", borrower.GetName());
         }
 
         [TestMethod]
-        public void BorrowerHasBook()
+        public void TestBorrowerHasBook()
         {
             Book book = new Book("The Joy of Sex", "Alex Comfort");
-            backpack.Add(book);
+            borrower.BorrowBook(book);
             Assert.AreEqual(1, borrower.CountBooks());
-        }
+        }            
     }
 }

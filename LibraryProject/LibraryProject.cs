@@ -52,5 +52,11 @@ namespace LibraryProject
         {
             return _capacity == CountCollection();
         }
+
+        public Book RemoveBook(Book book)
+        {
+            _collection.Remove(book);
+            return book;
+        }
     }
 }
